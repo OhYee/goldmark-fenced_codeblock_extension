@@ -41,7 +41,7 @@ func (e *ext) RenderFencedCodeBlock(w util.BufWriter, source []byte, node ast.No
 
 	for _, m := range e.Map {
 		for _, lang := range m.Language {
-			if lang == language {
+			if lang == language || lang == "*" {
 				return m.RenderFunction(w, source, node, entering)
 			}
 		}
