@@ -1,5 +1,2 @@
-github.com/gomarkdown/markdown v0.0.0-20200127000047-1813ea067497 h1:wJkj+x9gPYlDyM34C6r3SXPs270coWeh85wu1CsusDo=
-github.com/gomarkdown/markdown v0.0.0-20200127000047-1813ea067497/go.mod h1:aii0r/K0ZnHv7G0KF7xy1v0A7s2Ljrb5byB7MO5p6TU=
-github.com/yuin/goldmark v1.1.23 h1:eTodJ8hwEUvwXhb9qxQNuL/q1d+xMQClrXR4mdvV7gs=
-github.com/yuin/goldmark v1.1.23/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
-golang.org/dl v0.0.0-20190829154251-82a15e2f2ead/go.mod h1:IUMfjQLJQd4UTqG1Z90tenwKoCX93Gn3MAQJMOSBsDQ=
+github.com/yuin/goldmark v1.1.30 h1:j4d4Lw3zqZelDhBksEo3BnWg9xhXRQGJPPSL6OApZjI=
+github.com/yuin/goldmark v1.1.30/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
