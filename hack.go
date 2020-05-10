@@ -16,6 +16,7 @@ func (h hack) Register(node ast.NodeKind, f renderer.NodeRendererFunc) {
 	}
 }
 
+// GetRenderFunc get the render function from a goldmark renderer
 func GetRenderFunc(target ast.NodeKind, r renderer.NodeRenderer) renderer.NodeRendererFunc {
 	var receiver renderer.NodeRendererFunc
 	h := hack{target, &receiver}
@@ -23,6 +24,7 @@ func GetRenderFunc(target ast.NodeKind, r renderer.NodeRenderer) renderer.NodeRe
 	return receiver
 }
 
+// GetFencedCodeBlockRendererFunc get the fenced codeblock render function from a goldmark renderer
 func GetFencedCodeBlockRendererFunc(r renderer.NodeRenderer) renderer.NodeRendererFunc {
 	return GetRenderFunc(ast.KindFencedCodeBlock, r)
 }
