@@ -12,7 +12,7 @@ var defaultRenderer = GetFencedCodeBlockRendererFunc(html.NewRenderer())
 
 // RenderMap languages and these renderer
 type RenderMap struct {
-	Language       []string // language name, for all language use "*"
+	Languages      []string // language name, for all language use "*"
 	RenderFunction renderer.NodeRendererFunc
 }
 
@@ -51,7 +51,7 @@ func (e *ext) RenderFencedCodeBlock(w util.BufWriter, source []byte, node ast.No
 	language := string(n.Language(source))
 
 	for _, m := range e.Map {
-		for _, lang := range m.Language {
+		for _, lang := range m.Languages {
 			if lang == language || lang == "*" {
 				return m.RenderFunction(w, source, node, entering)
 			}
